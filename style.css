@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+header {
+    background: #dbdada;
+    width: 100%;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+h1{
+    color: rgb(212, 207, 207);
+    font-size: 80px;
+    animation: run 1s infinite;
+    width: 50%;
+    height: auto;
+    margin-left: 350px;
+}
+@keyframes run{
+    50%{
+        opacity: 0.8;
+        background-color: red;
+    }
+    
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 10px;
+}
+.news-item {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.2s;
+    /* width: 400px;
+    height: 200px; */
+
+    display: flex;
+    flex-direction: column;
+    background-position: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.news-item#news1{
+    background-image: url("https://img-cdn.thepublive.com/fit-in/580x348/filters:format(webp)/indian-express-tamil/media/media_files/soAfqeQILy3OTULEfxgx.jpg");
+}
+.news-item#news2{
+    background-image: url("https://img-cdn.thepublive.com/fit-in/580x348/filters:format(webp)/indian-express-tamil/media/media_files/dAl1XAY0gjYCSrxyT4QA.jpg");
+}
+.news-item#news3{
+    background-image: url("https://images.news18.com/ibnlive/uploads/2024/07/sivakarthikeyan-son-2024-07-bcc2dd7c1ee0cd286cba58fab10215bd.jpg?impolicy=website&width=640&height=480");
+}
+.news-item#news4{
+    background-image: url("https://img-cdn.thepublive.com/fit-in/580x348/filters:format(webp)/indian-express-tamil/media/media_files/MoHS39wcOosC90UWOzGH.jpg");
+}
+.news-item#news5{
+    background-image: url("https://img-cdn.thepublive.com/fit-in/1280x0/filters:format(webp)/indian-express-tamil/media/media_files/TBAGYMmHQGAs6CC3Af7D.jpg");
+}
+.news-item#news6{
+    background-image: url("https://img-cdn.thepublive.com/fit-in/360x270/filters:format(webp)/indian-express-tamil/media/media_files/9uWdFTcpqAYGIMdj46W1.jpg");
+}
+.news-item#news7{
+    background-image: url("https://img-cdn.thepublive.com/fit-in/1280x0/filters:format(webp)/indian-express-tamil/media/media_files/9vJYfBZIY3pLNIIetIAs.jpg");
+}
+.news-item#news8{
+    background-image: url("https://img-cdn.thepublive.com/fit-in/580x348/filters:format(webp)/indian-express-tamil/media/media_files/C2OuxHh1M8kuMoGnZzim.jpg");
+}
+.news-item#news9{
+    background-image: url("https://img-cdn.thepublive.com/fit-in/1280x960/filters:format(webp)/indian-express-tamil/media/media_files/peacock-1.jpg");
+}
+.news-item:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.news-item h2 {
+    color: #fafdfd;
+    /* background-color: red; */
+    text-align: center;
+    width: 180px;
+    animation: run 2s infinite;
+}
+.news-item p {
+    /* color: #faf7f7; */
+    margin-top: 40px;
+     color: rgb(247, 8, 68);
+}
+.news-item#news1 p,#news4 p,#news5 p,#news8 p,#news6 p {
+    margin-top: 60px;
+    color: rgb(247, 8, 68);
+}
+.news-item#news2 p{
+    margin-top: 70px;
+}
+.news-item a {
+    text-decoration: none;
+    color: #007BFF;
+}
+.news-item a:hover {
+    text-decoration: underline;
+}
+.grid-container > :nth-of-type(2){
+    grid-column: 2/4;
+    height: 220px;
+} 
+
